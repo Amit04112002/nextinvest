@@ -18,6 +18,11 @@ public class NextInvestController {
     UsersService usersService;
 
 
+    /**
+     * 
+     * @param users
+     * @return
+     */
     @PostMapping("/saveUsers")
     public ResponseEntity<?> saveUsers(@RequestBody Users users) {
         usersService.saveUsers(users);
